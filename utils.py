@@ -116,7 +116,7 @@ def load_img(path, maxlen=1000):
     Ausgabe:
         normalisiertes Bild als Numpy-Array.
     """
-    img = plt.imread(path+".jpg")
+    img = plt.imread(path)
     #img = io.imread(Link).astype(float)
     while np.max(img.shape)>maxlen:
         #print(np.max(img.shape))
