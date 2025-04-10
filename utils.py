@@ -20,6 +20,11 @@ def setup(n=30):
     data = np.random.randn(n,2)+vv[0]
     data = np.row_stack([data, np.random.randn(n,2)+vv[1]])
     data = np.row_stack([data, np.random.randn(n,2)+vv[2]])
+
+    plt.figure()
+    plt.scatter(data[:, 0], data[:, 1])
+    plt.show()
+
     return data, vv
 
 def build_g(punkt1, punkt2):
