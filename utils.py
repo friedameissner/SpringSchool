@@ -92,7 +92,7 @@ def hex2rgb(c):
     Ausgabe:
         RGB-Vektor.
     """
-    return np.array(list(int(c[i:i+2], 16)/256 for i in (1, 3, 5)))
+    return np.array(list(int(c[i:i+2], 16)/256 for i in (0, 2, 4)))
 
 def rgb2hex(c):
     r"""
