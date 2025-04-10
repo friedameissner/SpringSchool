@@ -175,7 +175,7 @@ def plot_img_w_points(img, colors=None):
     ax = fig.add_subplot(1,2,2, projection='3d')
     ax.scatter(colors[0][:,0], colors[0][:,1], colors[0][:,2], c=colors[1], s=3)
     ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.set_zlim(0, 1)
-    plt.xlabel("x"); plt.ylabel("y"); plt.zlabel("z")
+    plt.xlabel("x"); plt.ylabel("y")
     fig.show()
 
 def pointwise_sq(d1, d2):
