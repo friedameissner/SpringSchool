@@ -17,13 +17,9 @@ def setup(n=30):
         vv: Mittelwerte in 3x2-Array.
     """
     vv = np.array([[5,5], [-5,0], [5,-6]])
-    data = np.random.randn(n,2)+vv[0]
-    data = np.row_stack([data, np.random.randn(n,2)+vv[1]])
-    data = np.row_stack([data, np.random.randn(n,2)+vv[2]])
-
-    plt.figure()
-    plt.scatter(data[:, 0], data[:, 1])
-    plt.show()
+    data = np.random.randn(n,2) + vv[0]
+    data = np.row_stack([data, np.random.randn(n,2) + vv[1]])
+    data = np.row_stack([data, np.random.randn(n,2) + vv[2]])
 
     return data, vv
 
