@@ -203,7 +203,7 @@ def zugehoerigkeit(codebook, data):
         argmin: Vektor mit Indizes der nächsten Codebooks.
         error: Mittlerer Fehler über alle gegebenen Daten.
     """
-    dists = pnp.sqrt(np.sum((codebook[:,None]-data)**2, axis=-1)).T
+    dists = np.sqrt(np.sum((codebook[:,None]-data)**2, axis=-1)).T
     argmin = np.argmin(dists, axis=-1)
     error = 0
     for i in range(len(argmin)):
